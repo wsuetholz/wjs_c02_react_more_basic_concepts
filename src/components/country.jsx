@@ -13,23 +13,28 @@ class Country extends Component {
     }
 
     render() {
+        const { onChangeValue, country } = this.props;
+
         return (
             < div className="Country" >
                 <div>
                     Country:
                     <a className='CountryName' >
-                        { this.state.name }
+                        { country.name }
                     </a>
-                    <img src={this.state.flag} className="CountryFlag" alt="Flag" />
+                    <img src={country.flag} className="CountryFlag" alt="Flag" />
                 </div>
                 <div>
                     Current Number of Gold Medals:
                     <a className='MedalCount' >
-                        { this.state.gold }
+                        { country.gold }
                     </a>
                 </div>
-                <button onClick={ this.handleClick } className='IncrMedalButton' >
+                <button onClick={ e => { onChangeValue (country.id, 'gold', 1); }} className='IncrMedalButton' >
                     Increment Gold Medal Count
+                </button>
+                <button onClick={ e => { onChangeValue (country.id, 'gold', -1); }} className='IncrMedalButton' >
+                    Decrement Gold Medal Count
                 </button>
             </div>
         );
