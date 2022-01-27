@@ -26,18 +26,48 @@
   vertical-align: middle;
 }
 
-.MedalCount {
+.MedalCountBronze {
   text-transform: capitalize;
   font-size: 2.5em;
   font-weight: bold;
   margin-bottom: 12px;
   margin-left: 12px;
-  vertical-align: middle;
+  margin-right: 12px;
+  width: 200px;
+  height: 300px;
+  background: sandybrown;
+  border-radius: 50%;
+}
+
+.MedalCountGold {
+  text-transform: capitalize;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 200px;
+  height: 300px;
+  background: gold;
+  border-radius: 50%;
+}
+
+.MedalCountSilver {
+  text-transform: capitalize;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 200px;
+  height: 300px;
+  background: silver;
+  border-radius: 50%;
 }
 
 .IncrMedalButtom {
-  margin-left: 10px;
-  width: 250px;
-  height: 100px;
   vertical-align: middle;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 0;
 }

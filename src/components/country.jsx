@@ -1,19 +1,14 @@
 import React, { Component } from 'react';
-import logo from "../logo.svg";
+import Medal from './medal';
 
 class Country extends Component {
-    state = {
-        name: 'Nauru',
-        flag: 'http://worldometers.info/img/flags/nr-flag.gif',
-        gold: 0,
-    }
-
-    handleClick = () => {
-        this.setState({ gold: this.state.gold + 1 } )
-    }
-
     render() {
         const { onChangeValue, country } = this.props;
+        const medalList = [
+            { id: 1, deco: 'MedalCountBronze', count: country.bronze, medalType: 'bronze' },
+            { id: 2, deco: 'MedalCountSilver', count: country.silver, medalType: 'silver' },
+            { id: 3, deco: 'MedalCountGold', count: country.gold, medalType: 'gold' }
+        ];
 
         return (
             < div className="Country" >
@@ -25,17 +20,12 @@ class Country extends Component {
                     <img src={country.flag} className="CountryFlag" alt="Flag" />
                 </div>
                 <div>
-                    Current Number of Gold Medals:
-                    <a className='MedalCount' >
-                        { country.gold }
-                    </a>
+                    Medals:
+                    { medalList.map( medal =>
+                        <Medal key={ medal.id } countryId={ country.id } medal={ medal } onChangeValue={ onChangeValue }
+                        />)}
                 </div>
-                <button onClick={ e => { onChangeValue (country.id, 'gold', 1); }} className='IncrMedalButton' >
-                    Increment Gold Medal Count
-                </button>
-                <button onClick={ e => { onChangeValue (country.id, 'gold', -1); }} className='IncrMedalButton' >
-                    Decrement Gold Medal Count
-                </button>
+                <hr />
             </div>
         );
     }
