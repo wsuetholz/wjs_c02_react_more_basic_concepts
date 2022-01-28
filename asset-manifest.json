@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/wjs_c03_react_lab_assignment/static/css/main.b9a1f5c4.css",
-    "main.js": "/wjs_c03_react_lab_assignment/static/js/main.cd83aa9e.js",
-    "static/js/787.253677c8.chunk.js": "/wjs_c03_react_lab_assignment/static/js/787.253677c8.chunk.js",
-    "static/media/logo.svg": "/wjs_c03_react_lab_assignment/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/wjs_c03_react_lab_assignment/index.html",
-    "main.b9a1f5c4.css.map": "/wjs_c03_react_lab_assignment/static/css/main.b9a1f5c4.css.map",
-    "main.cd83aa9e.js.map": "/wjs_c03_react_lab_assignment/static/js/main.cd83aa9e.js.map",
-    "787.253677c8.chunk.js.map": "/wjs_c03_react_lab_assignment/static/js/787.253677c8.chunk.js.map"
+    "main.css": "/wjs_c02_react_more_basic_concepts/static/css/main.bbf99453.css",
+    "main.js": "/wjs_c02_react_more_basic_concepts/static/js/main.892a0e96.js",
+    "static/js/787.5bb61843.chunk.js": "/wjs_c02_react_more_basic_concepts/static/js/787.5bb61843.chunk.js",
+    "static/media/logo.svg": "/wjs_c02_react_more_basic_concepts/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/wjs_c02_react_more_basic_concepts/index.html",
+    "main.bbf99453.css.map": "/wjs_c02_react_more_basic_concepts/static/css/main.bbf99453.css.map",
+    "main.892a0e96.js.map": "/wjs_c02_react_more_basic_concepts/static/js/main.892a0e96.js.map",
+    "787.5bb61843.chunk.js.map": "/wjs_c02_react_more_basic_concepts/static/js/787.5bb61843.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9a1f5c4.css",
-    "static/js/main.cd83aa9e.js"
+    "static/css/main.bbf99453.css",
+    "static/js/main.892a0e96.js"
   ]
 }
