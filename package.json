@@ -1,8 +1,8 @@
 {
-  "name": "wjs_c02_react_more_basic_concepts",
+  "name": "wjs_c03_react_lab_assignment",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://wsuetholz.github.io/wjs_c02_react_more_basic_concepts",
+  "homepage": "http://wsuetholz.github.io/wjs_c03_react_lab_assignment",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",

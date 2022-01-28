@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Medal from './medal';
+import IncrDecrButtons from './incrdecrbuttons';
 
 class Country extends Component {
     render() {
@@ -24,6 +25,16 @@ class Country extends Component {
                     { medalList.map( medal =>
                         <Medal key={ medal.id } countryId={ country.id } medal={ medal } onChangeValue={ onChangeValue }
                         />)}
+                </div>
+                <div>
+                    { medalList.map( medal =>
+                        <IncrDecrButtons key={ medal.id } countryId={ country.id } medal={ medal } onChangeValue={ onChangeValue }
+                        />)}
+                </div>
+                <div>
+                    <a>
+                        Total Medals Earned: { country.bronze + country.gold + country.silver }
+                    </a>
                 </div>
                 <hr />
             </div>
